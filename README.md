@@ -79,6 +79,11 @@ Tabla
 
 As you can see in the collage image above, a lot is going on, and if you are creating a set of say 500 images, you'd get a bonanza of images via default augmentations being performed. 
 
+## Training notebook:
+[Notebook](https://github.com/walnashgit/S12YoloV3-Training/blob/main/S12ERAV2_YoloV3.ipynb)
+
+## Training logs:
+[Logs](https://github.com/walnashgit/S12YoloV3-Training/blob/main/README.md)
 
 **Results**
 After training for 250 Epochs, this is the result
