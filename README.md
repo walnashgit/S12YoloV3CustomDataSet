@@ -75,7 +75,7 @@ Tabla
 14. Don't forget to perform the weight file steps mentioned in the sectio above. 
 15. Run this command to train `python train.py --data data/customdata/custom.data --batch 10 --cache --cfg cfg/yolov3-custom.cfg --epochs 3 --nosave`
 16. Run this command to test: `python test.py --data data/customdata/custom.data --batch 10 --cfg cfg/yolov3-custom.cfg  --weights weights/last.pt`
-17. Run this command for inference: `python detect.py`. It will use the images from the custom folder and save the output in output folder.
+17. Run this command for inference: `python detect.py`. It will use the images from the custom folder and save the output in 'output' folder.
 
 As you can see in the collage image above, a lot is going on, and if you are creating a set of say 500 images, you'd get a bonanza of images via default augmentations being performed. 
 
