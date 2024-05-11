@@ -266,7 +266,7 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
 
         n = len(self.img_files)
         assert n > 0, 'No images found in %s. See %s' % (path, help_url)
-        bi = np.floor(np.arange(n) / batch_size).astype(np.int)  # batch index
+        bi = np.floor(np.arange(n) / batch_size).astype(int)  # batch index
         nb = bi[-1] + 1  # number of batches
 
         self.n = n
@@ -313,7 +313,7 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
                 elif mini > 1:
                     shapes[i] = [1, 1 / mini]
 
-            self.batch_shapes = np.ceil(np.array(shapes) * img_size / 64.).astype(np.int) * 64
+            self.batch_shapes = np.ceil(np.array(shapes) * img_size / 64.).astype(int) * 64
 
         # Preload labels (required for weighted CE training)
         self.imgs = [None] * n
